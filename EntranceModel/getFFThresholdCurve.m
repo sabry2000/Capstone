@@ -1,8 +1,6 @@
-function [FFDomain,FFCurve,maximumAperture] = getFFThresholdCurve(xRange,FFThreshold,frequency)
+function [FFDomain,FFCurve] = getFFThresholdCurve(xRange,FFThreshold)
 %GETFFTHRESHOLDCURVE Summary of this function goes here
 %   Detailed explanation goes here
-    wavelength = 3e8/frequency;
-    maximumAperture = getMaximumAperture(wavelength,FFThreshold);
     
     midpointIndex = find(xRange == 0);
     xRangeDiff = abs(xRange(midpointIndex:end)-FFThreshold);
