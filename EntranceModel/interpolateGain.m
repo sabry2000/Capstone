@@ -5,5 +5,3 @@ function interpolatedGainDBI = interpolateGain(gainDBI,hpbwRadians,phiRadians)
     slope = (gain - HPGain)/(0 - hpbwRadians/2);
     interpolatedGainDBI = slope * phiRadians + gain;
 end
-
-ls
