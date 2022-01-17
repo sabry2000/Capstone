@@ -1,4 +1,4 @@
-function interpolatedGainDBI = interpolateGain(gainDBI,hpbwRadians,phiRadians)
+function interpolatedGainDBI = interpolateGain(gainDBI, hpbwRadians, phiRadians)
 %INTERPOLATEGAIN interpolates the gain at a certain angle theta
     gain = gainDBI;
     HPGain = gainDBI-3;

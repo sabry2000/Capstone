@@ -1,4 +1,4 @@
-function hpbwDegrees = gain2BW(gainDBI,isDualBeam,efficiency)
+function hpbwDegrees = gain2BW(gainDBI, isDualBeam, efficiency)
 %GAIN2BW This function converts an antenna gain (in dBi) measurement to its
 %corresponding half-power beamwidth angle (in degrees)
 	if (nargin == 2)
@@ -12,6 +12,7 @@ function hpbwDegrees = gain2BW(gainDBI,isDualBeam,efficiency)
     if isDualBeam
         solidAngle = solidAngle/2;
     end
+    
     hpbwRadians = sqrt(solidAngle);
     hpbwDegrees = rad2deg(hpbwRadians);
 end
