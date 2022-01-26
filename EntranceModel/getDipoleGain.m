@@ -3,4 +3,3 @@ function dipoleGain = getDipoleGain(thetaRadians)
     dipoleMaximumGain = 1.64;
     dipoleGain = dipoleMaximumGain * (cos(thetaRadians)^2);
 end
-
